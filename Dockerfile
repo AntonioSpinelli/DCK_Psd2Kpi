@@ -1,7 +1,7 @@
 # Stage and thin the application 
-FROM open-liberty:springBoot2 as staging
+FROM open-liberty as staging
 COPY --chown=1001:0 target/psd2kpi-0.1.0.jar \
-                    /staging/fat-psd2kpi-0.1.0.jar         
+                    /staging/fat-psd2kpi-0.1.0.jarI         
 # end::copyJar[]
 	
 # tag::springBootUtility[]
@@ -14,7 +14,7 @@ RUN springBootUtility thin \
 USER 1001
 
 # Build the image
-FROM open-liberty:springBoot2
+FROM open-liberty
 ARG VERSION=1.0
 ARG REVISION=SNAPSHOT
 
