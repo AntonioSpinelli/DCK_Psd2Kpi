@@ -4,12 +4,17 @@ COPY --chown=1001:0 target/psd2kpi-0.1.0.jar \
                     /staging/fat-psd2kpi-0.1.0.jar
 # end::copyJar[]
 
+RUN chown -R 1001:0 /opt /config /staging /config && \
+	chmod -R a+rx,g+rwx /opt /config /staging /config
+	
 # tag::springBootUtility[]
 RUN springBootUtility thin \
  --sourceAppPath=/staging/fat-psd2kpi-0.1.0.jar \
  --targetThinAppPath=/staging/thin-psd2kpi-0.1.0.jar \
  --targetLibCachePath=/staging/lib.index.cache
 # end::springBootUtility[]
+
+USER 1001
 
 # Build the image
 FROM open-liberty:springBoot2
@@ -28,6 +33,9 @@ LABEL \
   summary="The KPI PSD2 APPLICATION" \
   description="This image contains the kpi psd2 application running with the Open Liberty runtime."
 
+RUN chown -R 1001:0 /opt /config /staging /config && \
+	chmod -R a+rx,g+rwx /opt /config /staging /config
+
 # tag::serverXml[]
 RUN cp /opt/ol/wlp/templates/servers/springBoot2/server.xml /config/server.xml
 # end::serverXml[]
@@ -41,3 +49,5 @@ COPY --chown=1001:0 --from=staging /staging/thin-psd2kpi-0.1.0.jar \
 # end::thinjar[]
 
 RUN configure.sh 
+
+USER 1001
