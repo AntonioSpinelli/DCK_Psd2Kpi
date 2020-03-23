@@ -1,0 +1,11 @@
+com/ibm/psd2kpi/util/KpiLogUtilities.class
+com/ibm/psd2kpi/dao/Psd2KeyPerformanceIndicatorLoggerDao.class
+com/ibm/psd2kpi/bean/Psd2KpiController.class
+com/ibm/psd2kpi/dto/BaseResponse.class
+com/ibm/psd2kpi/dto/MovimentiCcRequest.class
+com/ibm/psd2kpi/dto/BaseRequest.class
+com/ibm/psd2kpi/dto/Movimento.class
+com/ibm/psd2kpi/bean/Psd2kpiApplication.class
+com/ibm/psd2kpi/dto/KpiLogRequest.class
+com/ibm/psd2kpi/dto/MovimentiCcResponse.class
+com/ibm/psd2kpi/bean/Psd2KpiController$1.class
