@@ -4,8 +4,7 @@ COPY --chown=1001:0 target/psd2kpi-0.1.0.jar \
                     /staging/fat-psd2kpi-0.1.0.jar
 # end::copyJar[]
 
-RUN chown -R 1001:0 /opt /config /staging /config && \
-	chmod -R a+rx,g+rwx /opt /config /staging /config
+RUN chown -R 1001:0 /staging/lib.index.cache
 	
 # tag::springBootUtility[]
 RUN springBootUtility thin \
@@ -32,9 +31,6 @@ LABEL \
   version="$VERSION-$REVISION" \
   summary="The KPI PSD2 APPLICATION" \
   description="This image contains the kpi psd2 application running with the Open Liberty runtime."
-
-RUN chown -R 1001:0 /opt /config /staging /config && \
-	chmod -R a+rx,g+rwx /opt /config /staging /config
 
 # tag::serverXml[]
 RUN cp /opt/ol/wlp/templates/servers/springBoot2/server.xml /config/server.xml
