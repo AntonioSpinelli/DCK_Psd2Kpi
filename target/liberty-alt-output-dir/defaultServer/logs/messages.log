@@ -6,15 +6,15 @@ java.home = /Library/Java/JavaVirtualMachines/jdk-11.0.2.jdk/Contents/Home
 java.version = 11.0.2
 java.runtime = Java(TM) SE Runtime Environment (11.0.2+9-LTS)
 os = Mac OS X (10.15.3; x86_64) (en_IT)
-process = 5034@MBP-di-Antonio
+process = 5258@MBP-di-Antonio
 ********************************************************************************
-[3/23/20, 19:50:01:974 CET] 0000000d com.ibm.ws.kernel.launch.internal.FrameworkManager           A CWWKE0001I: The server defaultServer has been launched.
-[3/23/20, 19:50:02:420 CET] 00000018 com.ibm.ws.config.xml.internal.ServerXMLConfiguration        A CWWKG0093A: Processing configuration drop-ins resource: /Users/antoniospinelli/Documents/GitHub/DCK_Psd2Kpi/target/liberty/wlp/usr/servers/defaultServer/configDropins/defaults/install_apps_configuration_1491924271.xml
-[3/23/20, 19:50:02:645 CET] 0000000d com.ibm.ws.kernel.launch.internal.FrameworkManager           I CWWKE0002I: The kernel started after 1.542 seconds
-[3/23/20, 19:50:02:662 CET] 00000023 com.ibm.ws.kernel.feature.internal.FeatureManager            I CWWKF0007I: Feature update started.
-[3/23/20, 19:50:03:072 CET] 00000023 com.ibm.ws.kernel.feature.internal.FeatureManager            A CWWKF0012I: The server installed the following features: [servlet-4.0, springBoot-2.0].
-[3/23/20, 19:50:03:072 CET] 00000023 com.ibm.ws.kernel.feature.internal.FeatureManager            I CWWKF0008I: Feature update completed in 0.429 seconds.
-[3/23/20, 19:50:03:073 CET] 00000023 com.ibm.ws.kernel.feature.internal.FeatureManager            A CWWKF0026I: The server defaultServer is ready to build a smaller package.
-[3/23/20, 19:50:03:076 CET] 00000024 com.ibm.ws.runtime.update.internal.RuntimeUpdateManagerImpl  A CWWKE1100I: Waiting for up to 30 seconds for the server to quiesce.
-[3/23/20, 19:50:03:081 CET] 00000024 com.ibm.ws.runtime.update.internal.RuntimeUpdateManagerImpl  I CWWKE1101I: Server quiesce complete.
-[3/23/20, 19:50:03:205 CET] 0000000d com.ibm.ws.kernel.launch.internal.FrameworkManager           A CWWKE0036I: The server defaultServer stopped after 2.104 seconds.
+[3/23/20, 19:54:08:818 CET] 0000000d com.ibm.ws.kernel.launch.internal.FrameworkManager           A CWWKE0001I: The server defaultServer has been launched.
+[3/23/20, 19:54:09:238 CET] 00000018 com.ibm.ws.config.xml.internal.ServerXMLConfiguration        A CWWKG0093A: Processing configuration drop-ins resource: /Users/antoniospinelli/Documents/GitHub/DCK_Psd2Kpi/target/liberty/wlp/usr/servers/defaultServer/configDropins/defaults/install_apps_configuration_1491924271.xml
+[3/23/20, 19:54:09:483 CET] 0000000d com.ibm.ws.kernel.launch.internal.FrameworkManager           I CWWKE0002I: The kernel started after 2.945 seconds
+[3/23/20, 19:54:09:501 CET] 00000023 com.ibm.ws.kernel.feature.internal.FeatureManager            I CWWKF0007I: Feature update started.
+[3/23/20, 19:54:09:883 CET] 00000023 com.ibm.ws.kernel.feature.internal.FeatureManager            A CWWKF0012I: The server installed the following features: [servlet-4.0, springBoot-2.0].
+[3/23/20, 19:54:09:883 CET] 00000023 com.ibm.ws.kernel.feature.internal.FeatureManager            I CWWKF0008I: Feature update completed in 0.401 seconds.
+[3/23/20, 19:54:09:883 CET] 00000023 com.ibm.ws.kernel.feature.internal.FeatureManager            A CWWKF0026I: The server defaultServer is ready to build a smaller package.
+[3/23/20, 19:54:09:887 CET] 00000024 com.ibm.ws.runtime.update.internal.RuntimeUpdateManagerImpl  A CWWKE1100I: Waiting for up to 30 seconds for the server to quiesce.
+[3/23/20, 19:54:09:891 CET] 00000024 com.ibm.ws.runtime.update.internal.RuntimeUpdateManagerImpl  I CWWKE1101I: Server quiesce complete.
+[3/23/20, 19:54:10:005 CET] 0000000d com.ibm.ws.kernel.launch.internal.FrameworkManager           A CWWKE0036I: The server defaultServer stopped after 3.468 seconds.

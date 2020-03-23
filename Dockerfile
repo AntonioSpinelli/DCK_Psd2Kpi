@@ -1,7 +1,7 @@
 # Stage and thin the application 
 FROM open-liberty as staging
 COPY --chown=1001:0 target/psd2kpi-0.1.0.jar \
-                    /staging/fat-psd2kpi-0.1.0.jarI         
+                    /staging/fat-psd2kpi-0.1.0.jar
 # end::copyJar[]
 	
 # tag::springBootUtility[]
@@ -10,8 +10,6 @@ RUN springBootUtility thin \
  --targetThinAppPath=/staging/thin-psd2kpi-0.1.0.jar \
  --targetLibCachePath=/staging/lib.index.cache
 # end::springBootUtility[]
-
-USER 1001
 
 # Build the image
 FROM open-liberty
@@ -43,5 +41,3 @@ COPY --chown=1001:0 --from=staging /staging/thin-psd2kpi-0.1.0.jar \
 # end::thinjar[]
 
 RUN configure.sh 
-
-USER 1001
