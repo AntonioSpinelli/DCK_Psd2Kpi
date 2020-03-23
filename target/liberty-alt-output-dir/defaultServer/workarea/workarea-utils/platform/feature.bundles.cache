@@ -1,4 +1,4 @@
-Cache-WriteTime=1584989649876;11
+Cache-WriteTime=1585002393099;11
 com.ibm.websphere.javaee.servlet.4.0/[1.0.0,1.0.200)=file:/Users/antoniospinelli/Documents/GitHub/DCK_Psd2Kpi/target/liberty/wlp/dev/api/spec/com.ibm.websphere.javaee.servlet.4.0_1.0.38.jar;12@PARALLEL
 com.ibm.ws.artifact.loose/[1.0.0,1.0.200)=file:/Users/antoniospinelli/Documents/GitHub/DCK_Psd2Kpi/target/liberty/wlp/lib/com.ibm.ws.artifact.loose_1.0.38.jar;12@PARALLEL
 com.ibm.ws.artifact.file/[1.0.0,1.0.200)=file:/Users/antoniospinelli/Documents/GitHub/DCK_Psd2Kpi/target/liberty/wlp/lib/com.ibm.ws.artifact.file_1.0.38.jar;12@PARALLEL

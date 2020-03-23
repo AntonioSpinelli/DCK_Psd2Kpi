@@ -12,6 +12,7 @@ import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.PreparedStatementSetter;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -56,7 +57,7 @@ public class Psd2KpiController {
   }
   
   @PostMapping("/insertNewLog")
-  public ResponseEntity<BaseResponse> insertNewLog(KpiLogRequest request){
+  public ResponseEntity<BaseResponse> insertNewLog(@RequestBody KpiLogRequest request){
 	  
 	  BaseResponse response = inserNewLogImpl(request);
 	  
