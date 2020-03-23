@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<server>
-    <springBootApplication id="psd2kpi" location="thin-psd2kpi-0.1.0.jar" name="psd2kpi"/>
-</server>
