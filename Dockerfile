@@ -3,11 +3,10 @@ FROM open-liberty:springBoot2 as staging
 COPY --chown=1001:0 target/psd2kpi-0.1.0.jar \
                     /staging/fat-psd2kpi-0.1.0.jar
 
-COPY --chown=1001:0 target/lib.index.cache /staging/lib.index.cache                   
-                 
+RUN mkdir /staging/lib.index.cache && \
+    chown 1001:0 /staging/lib.index.cache                   
+             
 # end::copyJar[]
-
-RUN chown -R 1001:0 /staging/lib.index.cache
 	
 # tag::springBootUtility[]
 RUN springBootUtility thin \
